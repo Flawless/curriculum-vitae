@@ -1,9 +1,11 @@
 * Config/Preamble                                                  :noexport:
 ** LaTeX Config
 #+BEGIN_SRC emacs-lisp :exports none  :results none :eval always
-  (setq org-latex-logfiles-extensions (quote ("lof" "lot" "tex~" "aux" "idx" "log" "out" "toc" "nav" "snm" "vrb" "dvi" "fdb_latexmk" "blg" "brf" "fls" "entoc" "ps" "spl" "bbl" "xmpi" "run.xml" "bcf")))
-  (add-to-list 'org-latex-classes '("resume" "\\documentclass[10pt]{resume}"))
-  (setq org-latex-packages-alist 'nil)
+     (setq org-latex-logfiles-extensions
+           (quote ("lof" "lot" "tex~" "aux" "idx" "log" "out" "toc" "nav" "snm" "vrb" "dvi"
+                   "fdb_latexmk" "blg" "brf" "fls" "entoc" "ps" "spl" "bbl" "xmpi" "run.xml" "bcf")))
+     (add-to-list 'org-latex-classes '("resume" "\\documentclass[10pt]{resume}"))
+     (setq org-latex-packages-alist 'nil)
 
 #+END_SRC
 #+LATEX_CLASS: resume
@@ -17,8 +19,8 @@
 #+LATEX_HEADER: \name{Alexander Ushanov}
 
 ** Personal Info                                                     :ignore:
-#+LATEX_HEADER: \address{github.com/Flawless}
-#+LATEX_HEADER: \address{alushanov92@gmail.com}
+#+LATEX_HEADER: \address{github.com/flawless}
+#+LATEX_HEADER: \address{quantum-discharge@protonmail.com}
 #+LATEX_HEADER: \address{@AlexanderUshanov}
 #+LATEX_HEADER: \address{Tbilisi, Georgia}
 
@@ -27,18 +29,18 @@
 #+begin_export latex
 \begin{rSection}{About}
 
-Functional programming fan, I like to work on complex things, researching, developing and watching how my products
-operate.
-In my work I always look for new ways however try to keep good and proved ones already discovered before. I like to
-evolve both professional skills and skills that didn't directly affect my profession life: sports (especially cycling),
-languages (I work to become fluent in English), psychology, economy, natural sciences.
+I'm chasing simplicity solving complicted tasks. I believe the key lies is not in writing clean or
+performant code, but in predicting whether a specific piece of software will require clear
+understanding or performance optimizations, or both.
 
-Have being organising large amount of people while playing online games in the past, so I know difference between a team
-and just a group of people.
+My journey to this idea has taken me more than ten years in software development, intertwined with
+project management, client relationships, and even finding myself in the middle of nowhere
+(71°25'43.4"N 151°02'21.7"E) just to deal with a software bug. I've also spent considerable time
+organizing groups of people to move in a coherent direction (I started with my own guild in online
+games when I was in school).
 
-As it'll be explained below, I worked both in large teams on big systems and on small projects by my own, have experience
-in multiple languages and different paradigms. Right now I'm looking for a team of like-minded people, who share my
-thoughts on developing software and my love to a functional way of solving problems.
+In the list below, I've kept everything brief to save your time. Please feel free to take a look and
+contact me if you share my vision of software development. We will discuss everything in detail.
 
 \end{rSection}
 #+end_export
@@ -46,59 +48,77 @@ thoughts on developing software and my love to a functional way of solving probl
 #+begin_export latex
 \begin{rSection}{Experience}
 #+end_export
+*** Aceplace                                                         :ignore:
+#+begin_export latex
+\begin{rSubsection}{Aceplace}{2023 - Present}{Clojure Developer, Lead}{Remote, UAE}
+We as a startup trying to bring to life the best in class marketplace for short term yacht and water
+experiences rental.
+\\
+My role in this company as a leader of a small team of skilled engineers is everything about backend
+development, operations and internal part of a simple but useful internal UI (Our frontend and app
+are mainteined by the second team).
+
+\end{rSubsection}
+#+end_export
+
+*** Otus                                                             :ignore:
+#+begin_export latex
+\begin{rSubsection}{Otus}{2023 - Present}{Clojure Teacher}{Remote, Russia}
+Just trying to bring a bit more clojurians for the humanity (:
+
+\end{rSubsection}
+#+end_export
 
 *** ARRIVAL                                                          :ignore:
 #+begin_export latex
-\begin{rSubsection}{ARRIVAL}{Jan 2021 - Feb 2023}{Clojure Developer}{Saint Petersburg, Russia - Tbilisi, Georgia}
+\begin{rSubsection}{ARRIVAL}{2021 - 2023}{Clojure Developer}{Saint Petersburg, Russia -
+Tbilisi, Georgia}
 
-Completely immersed in Clojure(Script) programming developing Arrival Service Platform core both on the back-end
-(Clojure, Datomic) and on the front-end (re-frame + custom ui kit). Worked on architectural problems as a participant of
-Architect Committee. Pushed simplicity and functional design to the development process.
+Clojure crash course on so called MVP project (we had a couple of prod envs for internal usage and
+testing on microfactories prototypes).
+\\
+Put my hands on a core part of our Service Platform working both on a backend and frontend parts of
+the project. Being a member of Architect Committee pushed simplicity and functional design to the
+system design ans development process.
+
+\end{rSubsection}
+#+end_export
+
+*** Intellect Pro                                                    :ignore:
+#+begin_export latex
+\begin{rSubsection}{Intellect Pro}{2018 - Present}{Electronic Engineer, Founder}{Saint
+Petersburg, Russia}
+
+My hobby electronic project, that somehow turned into production automotive firefighting system (:
+\\
+Circuit ans PCB design. Embedded development. Project and manufacturing management.
 
 \end{rSubsection}
 #+end_export
 
 *** Nonius Engineering                                               :ignore:
 #+begin_export latex
-\begin{rSubsection}{Nonius Engineering}{Jul 2014 - Dec 2020}{Software Developer}{Saint Petersburg, Russia}
+\begin{rSubsection}{Nonius Engineering}{2014 - 2021}{Software Developer}{Saint Petersburg,
+Russia}
 
-Lead (and most of the time, the only (: ) developer of dredging monitoring system written on Python (Flask). Made
-fleet management service from scratch to production.
-
-Wrote back-end code on Python and front-end on js and cljs,
-maintained CI/CD on GitLab CI (as well as introduced GitLab itself and maintained it),
-configured and maintained both cloud (GCP) and real hardware for service deploying,
-managed outsource programmers, as the service grew.
+Lead (and most of the time, the only (: ) developer of cloud service written on Python (Flask) for
+dredging, mining (not crypto) and marine traffic controll. Developed the service from scratch to
+production.
 
 \end{rSubsection}
 
-#+end_export
-
-*** Intellect Pro                                                    :ignore:
-#+begin_export latex
-\begin{rSubsection}{Intellect Pro}{Jan 2018 - Present}{Electronic Engineer, Founder}{Saint Petersburg, Russia}
-
-My hobby electronic project, that somehow turned into production automotive firefighting system (: .
-
-Dived into the world of electronic development: circuit design, PCB design, prototyping, interaction with contractors and
-on the one hand low level C programming, a bit of assemble, operation systems under a magnifying glass on the other.
-
-Right now the development is paused. The devices are producing and using by consumers
-
-\end{rSubsection}
 #+end_export
 
 *** SBS Info                                                         :ignore:
 #+begin_export latex
-\begin{rSubsection}{SBS Info}{Jan 2013 - Jan 2014}{1C Developer}{Saint Petersburg, Russia}
+\begin{rSubsection}{SBS Info}{2013 - 2014}{1C Developer}{Saint Petersburg, Russia}
 
-Started my career as 1C developer here. Learned many skills (both hard and soft) from my colleagues, interacted directly
-with customers and meet their needs as much as I could.
+A long time ago, my journey into the world of IT began here.
 
 \end{rSubsection}
 #+end_export
 
-*** End of experience section                                       :ignore:
+*** End of experience section                                        :ignore:
 #+begin_export latex
 \end{rSection}
 #+end_export
@@ -107,21 +127,12 @@ with customers and meet their needs as much as I could.
 #+begin_export latex
 \begin{rSection}{Education}
 
-\begin{rSubsection}{Saint Petersburg State Marine University}{July 2014}{Specialist degree in Robots and Robotic systems}{Saint Petersburg, Russia}
+\begin{rSubsection}{Saint Petersburg State Marine University}{2014}{Specialist degree in Robots
+and Robotic systems}{Saint Petersburg, Russia}
 
 Got the knowledge about how to find knowledge.
 
 \end{rSection}
-
-\end{rSection}
-#+end_export
-
-** Languages                                                         :ignore:
-#+begin_export latex
-\begin{rSection}{Languages}
-
-\item Russian - native
-\item English - upper intermediate and being learned
 
 \end{rSection}
 #+end_export
